@@ -9,6 +9,7 @@ Release:	%{release}
 Source0:	%{name}-%{version}.tar.bz2
 License:	GPL
 Group:		Development/Python
+BuildRoot:	%{_tmppath}/%{name}-buildroot
 BuildRequires:	wbxml2-devel >= 0.9.2
 BuildRequires:	python-devel libxml2-devel python-pyrex
 Url:		http://synce.sourceforge.net
