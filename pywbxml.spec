@@ -1,6 +1,6 @@
 %define name	pywbxml
 %define version	0.1
-%define release	%mkrel 3
+%define release	%mkrel 4
 
 Summary:	Python binding for wbxml2
 Name:		%{name}
