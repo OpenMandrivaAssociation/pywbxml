@@ -1,6 +1,6 @@
 %define name	pywbxml
 %define version	0.1
-%define release	%mkrel 4
+%define release	%mkrel 2
 
 Summary:	Python binding for wbxml2
 Name:		%{name}
@@ -23,7 +23,7 @@ Python binding for wbxml2
 %build
 aclocal
 autoconf
-%configure
+%configure2_5x
 %make
 
 %install
