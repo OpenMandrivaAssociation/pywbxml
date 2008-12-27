@@ -12,6 +12,7 @@ Group:		Development/Python
 BuildRoot:	%{_tmppath}/%{name}-buildroot
 BuildRequires:	wbxml2-devel >= 0.9.2
 BuildRequires:	python-devel libxml2-devel python-pyrex
+BuildRequires:	popt-devel
 Url:		http://synce.sourceforge.net
 
 %description
