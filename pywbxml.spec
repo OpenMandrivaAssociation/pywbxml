@@ -10,7 +10,7 @@ Source0:	%{name}-%{version}.tar.bz2
 License:	GPL
 Group:		Development/Python
 BuildRoot:	%{_tmppath}/%{name}-buildroot
-BuildRequires:	wbxml2-devel >= 0.9.2
+BuildRequires:	wbxml-devel >= 0.9.2
 BuildRequires:	python-devel libxml2-devel python-pyrex
 BuildRequires:	popt-devel
 Url:		http://synce.sourceforge.net
@@ -22,16 +22,13 @@ Python binding for wbxml2
 %setup -q
 
 %build
-aclocal
-autoconf
-%configure2_5x
+%configure2_5x --disable-static
 %make
 
 %install
 rm -rf $RPM_BUILD_ROOT
 %makeinstall_std
 
-rm -rf %buildroot%{py_platsitedir}/*.a
 rm -rf %buildroot%{py_platsitedir}/*.la
 
 %clean
