@@ -38,3 +38,35 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(-,root,root)
 %doc README AUTHORS NEWS
 %{py_platsitedir}/*.so
+
+
+%changelog
+* Mon Nov 22 2010 Funda Wang <fwang@mandriva.org> 0.1-3mdv2011.0
++ Revision: 599636
+- fix BR
+
+  + Thierry Vignaud <tv@mandriva.org>
+    - rebuild
+
+* Sat Dec 27 2008 Adam Williamson <awilliamson@mandriva.org> 0.1-2mdv2009.1
++ Revision: 319680
+- buildrequires popt-devel
+- use configure2_5x not configure
+- rebuild with python 2.6
+
+  + Thierry Vignaud <tv@mandriva.org>
+    - rebuild
+    - rebuild
+
+* Wed Jan 02 2008 Olivier Blin <oblin@mandriva.com> 0.1-1mdv2008.1
++ Revision: 140738
+- restore BuildRoot
+
+  + Thierry Vignaud <tv@mandriva.org>
+    - kill re-definition of %%buildroot on Pixel's request
+
+* Sun Jul 01 2007 Emmanuel Andry <eandry@mandriva.org> 0.1-1mdv2008.0
++ Revision: 46537
+- fix buildrequires
+- Import pywbxml
+
